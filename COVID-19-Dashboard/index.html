@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Covid-19</title>
+  <link rel="icon" type="image/png" sizes="32x14" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style/styleKeyBoard.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/styleSearch.css">
+  <link rel="stylesheet" href="style/styleControl.css">
+
+</head>
+
+<body>
+  <main>
+    <section class="globalInfo">
+      <div class="fullScreenBtn"><img src="assets/images/fullScreen.png"></div>
+      <div class="sectionConttent">
+        <div class="globalInfo__header">
+          <div class="searchContainer">
+            <div class="openKeyboardBtn"><img src="assets/images/openKeyboardBtn.png"></div>
+            <div class="searchInputContainer">
+              <input type="text" placeholder="search" class="textarea">
+              <div class="searchVariables"></div>
+            </div>
+            <div class="searchBtn">
+              <div class="searchBtn__inset searchBtn__insetClose">
+                <div class="searchBtn__inset_part"><img src="assets/images/searchClose.png"></div>
+                <div class="searchBtn__inset_part"><img src="assets/images/search.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="globalTable"></div>
+      </div>
+    </section>
+    <div class="mapAndControl">
+      <section class="map">
+        <div class="fullScreenBtn"><img src="assets/images/fullScreen.png"></div>
+        <div class="sectionConttent"></div>
+      </section>
+      <section class="control">
+        <div class="control__panel">
+          <div class="control__panel_countryAndDate">
+            <div class="controlCountry">World</div>
+            <div class="controlDate">Date</div>
+          </div>
+          <div class="control__panel_population">Population 7000000</div>
+          <div class="control__panel_buttons">
+            <div class="control-argum">
+              <div class="argum-container">
+                <div>Confirmed</div>
+                <div>Recovered</div>
+                <div>Deaths</div>
+                <div class="argum-container__glass"></div>
+              </div>
+              <div class="argum-changer">
+                <div class="argum-changer__button">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="control-period-and-abs">
+
+            </div>
+          </div>
+        </div>
+        <div class="control__diagram">
+          диаграмма
+        </div>
+
+      </section>
+
+    </div>
+    <div class="grafAndTableFirst">
+      <section class="tableFirst">
+        <div class="fullScreenBtn">
+          <img src="assets/images/fullScreen.png">
+        </div>
+        <div class="sectionConttent">
+          <div class="tableFirstHeader"> header</div>
+          <div class="tabFTable">
+            <div class="tabFTable__header">
+              <div class="fTableLine headerTable">
+                <div class="fTableLine__Country">
+                  <div class="tabFTable__header_text">Country</div>
+                  <div class="tabFTable__header_arrows">
+                    <div class="sortArrowTop sortArrowCountry notActiveArrow"><img src="assets/images/arrow.png"></div>
+                    <div class="sortArrowBottom sortArrowCountry notActiveArrow"><img src="assets/images/arrow.png"></div>
+                  </div>
+                </div>
+                <div class="fTableLine__Confirmed">
+                  <div class="tabFTable__header_text">Confirmed</div>
+                  <div class="tabFTable__header_arrows">
+                    <div class="sortArrowTop sortArrowConfirmed notActiveArrow"><img src="assets/images/arrow.png"></div>
+                    <div class="sortArrowBottom sortArrowConfirmed"><img src="assets/images/arrow.png"></div>
+                  </div>
+                </div>
+                <div class="fTableLine__Recovered">
+                  <div class="tabFTable__header_text">Recovered</div>
+                  <div class="tabFTable__header_arrows">
+                    <div class="sortArrowTop sortArrowRecovered notActiveArrow"><img src="assets/images/arrow.png"></div>
+                    <div class="sortArrowBottom sortArrowRecovered notActiveArrow"><img src="assets/images/arrow.png"></div>
+                  </div>
+                </div>
+                <div class="fTableLine__Deaths">
+                  <div class="tabFTable__header_text">Deaths</div>
+                  <div class="tabFTable__header_arrows">
+                    <div class="sortArrowTop sortArrowDeaths notActiveArrow"><img src="assets/images/arrow.png"></div>
+                    <div class="sortArrowBottom sortArrowDeaths notActiveArrow"><img src="assets/images/arrow.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="fTableLine fTableGlobal">
+                <div class="fTableLine__Country">Global</div>
+                <div class="fTableLine__Confirmed"></div>
+                <div class="fTableLine__Recovered"></div>
+                <div class="fTableLine__Deaths"></div>
+              </div>
+            </div>
+            <div class="tabFTable__content"></div>
+          </div>
+        </div>
+      </section>
+      <section class="graf">
+        <div class="fullScreenBtn">
+          <img src="assets/images/fullScreen.png">
+        </div>
+        <div class="sectionConttent">График</div>
+      </section>
+    </div>
+
+  </main>
+
+  <div class='audio'>
+    <audio id='enterAudio' src="assets/audio/enter.mp3"></audio>
+    <audio id='ruUpAudio' src="assets/audio/ruUP.mp3"></audio>
+    <audio id='ruDownAudio' src="assets/audio/ruDown.mp3"></audio>
+    <audio id='enUpAudio' src="assets/audio/enUP.mp3"></audio>
+    <audio id='enDownAudio' src="assets/audio/enDown.mp3"></audio>
+    <audio id='langAudio' src="assets/audio/changeLanguage.mp3"></audio>
+    <audio id='shiftAudio' src="assets/audio/shift.mp3"></audio>
+    <audio id='capsLookAudio' src="assets/audio/capsLook.mp3"></audio>
+    <audio id='backspaceAudio' src="assets/audio/backspace.mp3"></audio>
+    <audio id='openKeyboardAudio' src="assets/audio/openKeyboard.wav"></audio>
+    <audio id='closeKeyboardAudio' src="assets/audio/closeKeyboard.wav"></audio>
+  </div>
+
+  <script src="modules/data.js" defer></script>
+  <script src="index.js" defer></script>
+  <script src="modules/keyBoard.js" defer></script>
+  <script src="modules/keys.js" defer></script>
+</body>
+
+</html>

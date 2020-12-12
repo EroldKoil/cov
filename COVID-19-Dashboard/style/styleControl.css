@@ -1,0 +1,74 @@
+.control {
+    height: 29%;
+    width: 100%;
+    display: flex;
+    color: #b3b3b3;
+}
+
+.control__panel {
+    width: 70%;
+    border-right: solid 2px #6565654f;
+}
+
+.control__panel_countryAndDate {
+    display: flex;
+    justify-content: space-between;
+    height: 18%;
+}
+
+.controlCountry {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlDate {
+    width: 50%;
+    border-left: solid 2px #6565654f;
+    border-bottom: solid 2px #6565654f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control__panel_population {
+    height: 15%;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+
+.control__panel_buttons {
+    width: 100%;
+    height: 63%;
+    display: flex;
+}
+
+.control-argum {}
+
+.argum-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.argum-container div:not(.argum-container__glass) {
+    width: 30%;
+}
+
+.argum-container__glass {}
+
+.argum-changer {
+    width: 100%;
+    background-color: aliceblue;
+    height: 10px;
+}
+
+.argum-changer__button {}
+
+.argum-changer__button div {}
+
+.control-period-and-abs {}
+
+.control__diagram {
+    width: 30%;
+}
